@@ -1,0 +1,21 @@
+# Local dev stack. Services are uncommented as the phases that need them land.
+services:
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+
+  # kafka:
+  #   image: bitnami/kafka:3.7
+  #   environment:
+  #     KAFKA_CFG_NODE_ID: "0"
+  #     KAFKA_CFG_PROCESS_ROLES: "controller,broker"
+  #   ports:
+  #     - "9092:9092"
+
+  scorer:
+    build: .
+    depends_on:
+      - redis
+    environment:
+      SENTINEL_REDIS_URL: redis://redis:6379/0
