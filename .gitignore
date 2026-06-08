@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+.mypy_cache/
+
+# Data & models (never commit raw data or weights)
+data/
+*.parquet
+*.csv
+models/
+*.pt
+*.bin
+
+# Secrets / env
+.env
+*.local
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Infra runtime
+spark-warehouse/
+checkpoints/
+logs/
