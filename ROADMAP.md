@@ -9,7 +9,7 @@ unchecked phase.
 ## Foundations
 - [x] **Phase 0 — Scaffold.** Package layout, config + canonical `AuthEvent` schema,
   tests, ruff, CI, Docker skeleton, this roadmap.
-- [ ] **Phase 1 — Synthetic auth-log generator.** Realistic SSO/VPN/app login stream
+- [x] **Phase 1 — Synthetic auth-log generator.** Realistic SSO/VPN/app login stream
   with injectable anomaly patterns (impossible travel, credential stuffing, privilege
   spikes) for reproducible testing.
 - [ ] **Phase 2 — Event validation & normalization layer.** Source adapters → canonical
