@@ -12,7 +12,7 @@ unchecked phase.
 - [x] **Phase 1 — Synthetic auth-log generator.** Realistic SSO/VPN/app login stream
   with injectable anomaly patterns (impossible travel, credential stuffing, privilege
   spikes) for reproducible testing.
-- [ ] **Phase 2 — Event validation & normalization layer.** Source adapters → canonical
+- [x] **Phase 2 — Event validation & normalization layer.** Source adapters → canonical
   `AuthEvent`; dead-letter handling for malformed records.
 - [ ] **Phase 3 — Kafka I/O.** Producer/consumer wrappers, topic config, replayable
   offsets, integration test against an ephemeral broker.
